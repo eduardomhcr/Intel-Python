@@ -4,9 +4,7 @@ def tieneCeros(n):
 	else:
 		return aux(abs(n))
 
-tieneCerosAlternativa = lambda n:n==0 and aux_alt(abs(n))
-aux_alt = not n==0 and n%10==0 or aux_alt(n//10)
-
+tieneCerosAlternativa = lambda n:n==0 and aux(abs(n))
 
 def aux(n):
 	if n==0:
