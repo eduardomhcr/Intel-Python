@@ -14,4 +14,17 @@ def esMatriz(matriz):
 		return False
 
 
+def sumarMatrices(m1,m2):
+	if esMatriz(m1) and esMatriz(m2) and len(m1)==len(m2) and len(m1[0])==len(m2[0]):
+		matrizResultado = []
+		for numFila in range(len(m1)):
+			filaResultado = []
+			for numCol in range(len(m1[0])):
+				res = m1[numFila][numCol] + m2[numFila][numCol]
+				filaResultado  = filaResultado + [res]
+			matrizResultado = matrizResultado + [filaResultado]
+		return matrizResultado
+	else:
+		return False
+
 
