@@ -27,4 +27,13 @@ def sumarMatrices(m1,m2):
 	else:
 		return False
 
+def obtenerMaximos(matriz):
+	resultado = []
+	for fila in matriz:
+		resultado.append(max(fila))
+	return resultado
+
+
+
+
 
